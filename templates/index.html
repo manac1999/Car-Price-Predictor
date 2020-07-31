@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Predictor</title>
+</head>
+
+<style type="text/css">
+    body{
+        background-color:#33FFA8;
+	}
+    h1{
+        color: #3633FF;
+        font-size: 30px;
+        font-style:italic;
+        padding:20px;
+        margin:30px;
+        text-align: center;
+    }
+    div{
+        color:#3633FF;
+        font-size:25px;
+        padding:20px;
+        margin:30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1><u>Car Price Predictor</u></h1>
+    <div>
+    <form action="/recommend" method="POST">
+        <label >Enter car company:</label><br>
+        <input type="text" name="company"><br>
+        <label>Enter model name:</label><br>
+        <input type="text" name=""><br>
+        <label>Enter Year of Purchase:</label><br>
+        <input type="text" name="year"><br>
+        <label>Enter Kms driven:</label><br>
+        <input type="text" name="kms"><br>
+        <label>Enter fuel type:</label><br>
+        <input type="text" name="fuel"><br>
+        <input type="submit" name="" value="Predict"><br>
+    </form>
+    </div>
+
+    {{price}}
+
+</body>
+</html>
